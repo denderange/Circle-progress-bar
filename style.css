@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.pb-container{
+	display: flex;
+	row-gap: 30px;
+	width: 420px;
+	padding: 50px 0;
+	border-radius: 8px;
+	background-color: var(--color-100);
+	flex-direction: column;
+	align-items: center;
+}
+
+.progressbar{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background: conic-gradient(var(--color-200) 3.6deg, var(--color-300) 0deg);
+}
+
+.progressbar::before{
+	content: "";
+	position: absolute;
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	background-color: var(--color-210);
+}
+
+.progressbar i{
+	font-style: normal;
+	position: relative;
+	font-size: 40px;
+	padding-top: 20px;
+	font-weight: bolder;
+}
+
+.progressbar__value{
+	position: relative;
+	font-size: 80px;
+	font-weight: bolder;
+}
